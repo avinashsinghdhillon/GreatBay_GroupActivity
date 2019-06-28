@@ -26,6 +26,8 @@ function updateBid() {
 
     if(bid > highest_bid) {
         highest_bid = bid;
+    } else {
+        console.log("The bid is too low, try it next time!")
     }
         function(err, res) {
         if (err) throw err;
